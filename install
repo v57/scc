@@ -1,0 +1,5 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+swift build -c release
+cd .build/release
+cp scc /usr/local/bin/scc
